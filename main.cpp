@@ -22,6 +22,6 @@ int main()
     cin>>a;
     float c=(3.14)*(a*a);
     cout<<"el area es: "<<c;*/
-    cout<<"*********\n*\t*\n*\t*\n*\t*\n*\t*\n*\t*\n*\t*\n*********";
+    cout<<"*********\t***\t\t*\t\t*\n*\t*";
     return 0;
 }
