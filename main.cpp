@@ -11,15 +11,16 @@ int main()
     int m=x*y;
     float d=x/y;
     int a,b;
-    cin >>a;
-    cin >>b;
-
     std::cout <<"el primer numero es: "<<x<<std::endl;
     std::cout <<"el segundo numero es: "<<y<<std::endl;
     std::cout <<"la suma es: "<<s<<std::endl;
     std::cout <<"la resta es: "<<r<<std::endl;
     std::cout <<"la multiplicacion es: "<<m<<std::endl;
     std::cout <<"la division es: "<<d<<std::endl;
-    std::cout <<"a es: "<<a<<" y b es: "<<b<<std::endl;
+    //std::cout <<"a es: "<<a<<" y b es: "<<b<<std::endl;
+    std::cout <<"ingrese el radio del circulo: "<<std::endl;
+    cin>>a;
+    float c=(3.14)*(a*a);
+    cout<<"el area es: "<<c;
     return 0;
 }
