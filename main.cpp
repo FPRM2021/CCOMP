@@ -4,7 +4,7 @@ using namespace std;
 
 int main()
 {
-    int x=8;
+    /*int x=8;
     float y=3;
     int s=x+y;
     int r=x-y;
@@ -21,6 +21,7 @@ int main()
     std::cout <<"ingrese el radio del circulo: "<<std::endl;
     cin>>a;
     float c=(3.14)*(a*a);
-    cout<<"el area es: "<<c;
+    cout<<"el area es: "<<c;*/
+    cout<<"*********\n*\t*\n*\t*\n*\t*\n*\t*\n*\t*\n*\t*\n*********";
     return 0;
 }
