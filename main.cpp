@@ -87,7 +87,7 @@ int main()
         cout<<"impar";
     }else{
     cout<<"par";
-    }*/
+    }
     int a;
     int b;
     cin>>a;
@@ -97,5 +97,35 @@ int main()
     }else{
         cout<<"si es multiplo";
     }
+    int x;
+    cin>>x;
+
+    for(int i=10000;i>=1;i=i/10){
+        int tmp=x/i;
+        cout<<tmp<<" ";
+        x=x%i;
+    }*/
+
+    int mayor=0;
+    int menor=0;
+    int suma=0;
+    int a;
+    int n;
+    float promedio=0;
+    cin>>n;
+    cin>>a;
+    mayor=a;
+    menor=a;
+    for(int i=1; i<n; i=i+1){
+        cin>>a;
+        if (a>mayor){
+            mayor=a;
+        }else if(a<menor){
+            menor=a;
+        suma+=a;
+        }
+    }
+    promedio=suma/n;
+    cout<<"promedio: "<<promedio<<" mayor: "<<mayor<<" menor: "<<menor<<endl;
     return 0;
 }
