@@ -93,17 +93,17 @@ int main()
     cout<<"introduzca un numero: "<<endl;
     cin>>a;
     for(int e=2; e<a; e+=1){
-        int contador=0;
-        for (int i=2; i<=e; i+=1){
+        int contador=1;//empieza siempre con 1(como si fuera verdadero)
+        for (int i=2; i<e; i+=1){//for (int i=2; i<=e; i+=1) asi lo tenias y el i siempre iba hasta el numero e (osea hacias la verificacion de a hasta a cuando deberia ser de a hasta a-1)
             if (e%i==0){
-                contador+=1;
+                contador=0;//(no le sumes uno solo asignale el valor 0)
                 break;
             }
         }
-        if (contador==0){
+        if (contador==1){
             cout<<e<<endl;
         }else{
-            contador=0;
+            contador=1;
                 }
     }
     return 0;
