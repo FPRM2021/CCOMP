@@ -70,12 +70,12 @@ int main()
             }*/
 
     /*quinto ejercicio*/
-    /*int a;
+    int a;
     int contador=0;
     cout<<"introduzca un numero: "<<endl;
     cin>>a;
-    for (int i=1; i<(a+1); i+=1){
-            if (a%i==0){
+    for (int i=1; i<=a; i++){
+            if (!(a%i)){
                 contador++;
         }
     }
@@ -83,7 +83,7 @@ int main()
         cout<<a<<" no es primo"<<endl;
         }else{
             cout<<a<<" es primo"<<endl;
-            }*/
+            }
 
     /*sexto ejercicio*/
     /*int a;
