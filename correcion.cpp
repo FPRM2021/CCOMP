@@ -13,7 +13,7 @@ int main()
         cout<<"es menor de edad";
         }else{
             cout<<"es mayor de edad";
-        }*/
+        }/*
     /*segundo ejercicio*/
 
     /*int n;
@@ -28,29 +28,20 @@ int main()
     }*/
 
     /*tercer ejercicio*/
-    /*int a;
-    int b;
-    int c;
+    /*int a,b,c,mayor,menor;
     cout<<"introduzca 3 numeros: "<<endl;
     cin>>a;
     cin>>b;
     cin>>c;
-    if (a<b and a<c){
-        cout<<a<<" es el menor"<<endl;
-    }else if(b<a and b<c){
-        cout<<b<<" es el menor"<<endl;
-    }else{
-        cout<<c<<" es el menor"<<endl;
-    }
-    if (a>b and a>c){
-        cout<<a<<" es el mayor"<<endl;
-    }else if(b>a and b>c){
-        cout<<b<<" es el mayor"<<endl;
-    }else{
-        cout<<c<<" es el mayor"<<endl;
-    }
+    menor=(a<b)?a:b;
+    menor=(menor<c?menor:c);
+    mayor=(a>b)?a:b;
+    mayor=(mayor>c?mayor:c);
+        cout<<menor<<" es el menor"<<endl;
+        cout<<mayor<<" es el mayor"<<endl;
     int promedio=(a+b+c)/3;
-    cout<<"el promedio es: "<<promedio;*/
+        cout<<"el promedio es: "<<promedio;
+    /*
 
     /*cuarto ejercicio*/
     /*int a,b;
