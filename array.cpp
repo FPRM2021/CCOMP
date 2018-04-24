@@ -63,6 +63,7 @@ void copystr(char arr1[],char arr2[]){
         arr1[i]=arr2[i];
         cout<<arr1[i];
     }
+    arr1[tamano(arr2)]='\0';
 }
 
 void concstr(char arr1[],char arr2[]){
