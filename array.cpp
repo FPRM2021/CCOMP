@@ -59,7 +59,7 @@ int tamano(char arr[]){
     }
 
 void copystr(char arr1[],char arr2[]){
-    for(int i=0;arr1[i]!='\0';i++){
+    for(int i=0;arr2[i]!='\0';i++){
         arr1[i]=arr2[i];
         cout<<arr1[i];
     }
