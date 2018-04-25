@@ -2,16 +2,16 @@
 
 using namespace std;
 
-int sumArray(int arr[],const int len){
+int sumArray(int *arr,const int len){
     int *ptr=arr;
     int sum=0;
-    for (;ptr<=&arr[len-1];ptr++)
+    for (;ptr<=(arr+len-1);ptr++)
         sum+=*ptr;
     return sum;
 }
 
-int sumArrayR(int arr[],int len){
-    int *ptr=&arr[len-1];
+int sumArrayR(int *arr,int len){
+    int *ptr=(arr+len-1);
     if (len==1){
          ptr=arr;
          return *ptr;
@@ -20,16 +20,17 @@ int sumArrayR(int arr[],int len){
     }
 }
 
-void invArr(int arr[],const int len){
-    for(int i=0;i<len/2;i++){
-        int *ptr=arr;
-        int a=*(ptr+i);
-        *(ptr+i)=*(ptr+len-1-i);
-        *(ptr+len-1-i)=a;
+void invArr(int *arr,const int len){
+    int *ptr=(arr+len-1);
+    int a;
+    for(;ptr>=arr;ptr--,arr++){
+        a=*arr;
+        *arr=*ptr;
+        *ptr=a;
     }
 }
 
-int tamano(char arr[]){
+int tamano(char *arr){
     int a=0;
     char *ptr=arr;
     for(int i=0;*(ptr+i)!='\0';i++)
@@ -37,7 +38,7 @@ int tamano(char arr[]){
     return a;
 }
 
-void copystr(char arr1[],char arr2[]){
+void copystr(char *arr1,char *arr2){
     char *ptr=arr1;
     char *ptr1=arr2;
     for(int i=0;*(ptr1+i)!='\0';i++){
@@ -46,7 +47,7 @@ void copystr(char arr1[],char arr2[]){
     *(ptr+tamano(arr2))='\0';
 }
 
-void concstr(char arr1[],char arr2[]){
+void concstr(char *arr1,char *arr2){
     char *ptr=arr1;
     char *ptr1=arr2;
     int a;
@@ -62,5 +63,7 @@ int main()
     char cad[20]="hola";
     char cad1[20]="adios";
     int ar[]={1,2,3,4};
+    concstr(cad1,cad);
+    cout<<cad1;
     return 0;
 }
