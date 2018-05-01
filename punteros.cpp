@@ -43,9 +43,9 @@ void concstr(char *arr1,char *arr2){
     }
 }
 
-void printArr(int arr[],int len){
-    for(int i=0;i<len;++i){
-        cout<<arr[i]<<' ';
+void printArr(int *arr,int len){
+    for(;arr<arr+len;arr++,len--){
+        cout<<*arr<<' ';
     }
 }
 
