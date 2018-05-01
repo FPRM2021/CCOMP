@@ -13,34 +13,33 @@ int sumArrayR(int *arr,int len){
     return (len==0)?0:*arr+sumArrayR(++arr,--len);
 }
 
-void invArr(int *arr,const int len){
+void invArr(int *arr,int len){
     int *ptrf=arr+len-1;
-    int a;
-    for(int i=0;i<len/2;i++,arr++,ptrf--){
-        a=*arr;
-        *arr=*ptrf;
-        *ptrf=a;
+    for(;arr<ptrf;arr++,ptrf--,len--){
+        *arr+=*ptrf;
+        *ptrf=*arr-*ptrf;
+        *arr=*arr-*ptrf;
     }
 }
-
 int tamano(char *arr){
     int c=0;
-    for(int i=0;*(arr++)!='\0';i++)
+    for(;*(arr)!='\0';arr++)
         c++;
     return c;
 }
 
 void copystr(char *arr1,char *arr2){
-    for(int i=0;i<tamano(arr2);i++,arr1++,arr2++){
+    char *ptrf=arr2+tamano(arr2);
+    for(;arr2<ptrf;arr1++,arr2++){
         *arr1=*arr2;
     }
     *(arr1+tamano(arr2))='\0';
 }
 
 void concstr(char *arr1,char *arr2){
-    int a=tamano(arr1);
-    for(int i=0;i<tamano(arr2);i++,arr1++,arr2++){
-        *(arr1+a)=*(arr2);
+    char *ptrf=arr1+tamano(arr1);
+    for(;arr2<arr2+tamano(arr2);ptrf++,arr2++){
+        *ptrf=*arr2;
     }
 }
 
@@ -54,6 +53,6 @@ int main()
 {
     char cad[20]="hola";
     char cad1[20]="adios";
-    int ar[]={1,2,3,4};
+    int ar[]={1,2,3,4,5};
     return 0;
 }
