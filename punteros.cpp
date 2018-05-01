@@ -11,13 +11,8 @@ int sumArray(int *arr,const int len){
 }
 
 int sumArrayR(int *arr,int len){
-    int *ptr=(arr+len-1);
-    if (len==1){
-         ptr=arr;
-         return *ptr;
-    }else{
-    return *ptr+sumArrayR(arr,--len);
-    }
+    int *ptr=arr+len-1;
+         return (len==1)?ptr=arr,*ptr:*ptr+sumArrayR(arr,--len);
 }
 
 void invArr(int *arr,const int len){
