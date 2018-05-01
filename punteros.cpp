@@ -2,48 +2,45 @@
 
 using namespace std;
 
-int sumArray(int *arr,const int len){
-    int *ptr=arr;
+int sumArray(int *arr,int len){
     int sum=0;
-    for (;ptr<=(arr+len-1);ptr++)
-        sum+=*ptr;
+    for (;len!=0;++arr,--len)
+        sum+=*arr;
     return sum;
 }
 
 int sumArrayR(int *arr,int len){
-    return (len==1)?*arr:*arr+sumArrayR(++arr,--len);
+    return (len==0)?0:*arr+sumArrayR(++arr,--len);
 }
 
 void invArr(int *arr,const int len){
     int *ptrf=arr+len-1;
     int a;
-    for(int i=0;i<len/2;i++){
+    for(int i=0;i<len/2;i++,arr++,ptrf--){
         a=*arr;
         *arr=*ptrf;
         *ptrf=a;
-        arr++;
-        ptrf--;
     }
 }
 
 int tamano(char *arr){
     int c=0;
-    for(int i=0;*(arr+i)!='\0';i++)
+    for(int i=0;*(arr++)!='\0';i++)
         c++;
     return c;
 }
 
 void copystr(char *arr1,char *arr2){
-    for(int i=0;i<tamano(arr2);i++){
-        *(arr1+i)=*(arr2+i);
+    for(int i=0;i<tamano(arr2);i++,arr1++,arr2++){
+        *arr1=*arr2;
     }
     *(arr1+tamano(arr2))='\0';
 }
 
 void concstr(char *arr1,char *arr2){
     int a=tamano(arr1);
-    for(int i=0;i<tamano(arr2);i++){
-        *(arr1+a+i)=*(arr2+i);
+    for(int i=0;i<tamano(arr2);i++,arr1++,arr2++){
+        *(arr1+a)=*(arr2);
     }
 }
 
