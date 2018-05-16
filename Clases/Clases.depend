@@ -1,0 +1,13 @@
+# depslib dependency file v1.0
+1526481669 source:c:\users\alumno-e\desktop\clases\main.cpp
+	<iostream>
+	"curso.h"
+
+1526481835 c:\users\alumno-e\desktop\clases\include\curso.h
+	<string>
+
+1526481854 source:c:\users\alumno-e\desktop\clases\src\curso.cpp
+	"curso.h"
+	<iostream>
+	<sstream>
+
