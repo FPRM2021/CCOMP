@@ -1,0 +1,171 @@
+#include "IntegerArray.h"
+
+IntegerArray::IntegerArray(int size, int a[])
+{
+    data = new int[size];
+    this->size = size;
+}
+
+IntegerArray::IntegerArray(IntegerArray &o){
+    data = new int[o.size];
+    size = o.size;
+    for (int i = 0; i < size; ++i)
+        data[i] = o.data[i];
+}
+
+IntegerArray::~IntegerArray()
+{
+    delete[] data;
+}
+
+void IntegerArray::ImpData(){
+    for(int i=0;i<size;i++)
+        cout<<data[i]<<" ";
+}
+
+void IntegerArray::Insertar(int n){
+    int *nuevo=new int[size+1];
+    for(int i=0;i<size;i++)
+        nuevo[i]=data[i];
+    nuevo[size]=n;
+    size++;
+    delete []data;
+    data=nuevo;
+}
+void IntegerArray::Insertar(int n, int p){
+    data[p]=n;
+}
+
+void IntegerArray::Eliminar(int p){
+    int *nuevo=new int[size-1];
+    for(int i=0;i<p;i++)
+        nuevo[i]=data[i];
+    for(;p<size;p++)
+        nuevo[p]=data[p+1];
+    size--;
+    delete []data;
+    data=nuevo;
+}
+
+void IntegerArray::Vaciar(){
+    int *nuevo=new int[0];
+    size=0;
+    delete []data;
+    data=nuevo;
+}
+
+int IntegerArray::Mayor(){
+    int mayor=data[0];
+    for(int i=1;i<size;i++){
+        if (mayor<data[i])
+            mayor=data[i];
+    }
+    return mayor;
+}
+
+int IntegerArray::Menor(){
+    int menor=data[0];
+    for(int i=1;i<size;i++){
+        if (menor>data[i])
+            menor=data[i];
+    }
+    return menor;
+}
+
+int IntegerArray::Suma(){
+    int sum=0;
+    for(int i=0;i<size;i++)
+        sum+=data[i];
+    return sum;
+}
+
+int IntegerArray::Promedio(){
+    return Suma()/size;
+}
+
+int IntegerArray::MayorPrim(){
+    int c=0;
+    int pm;
+    for(int i=0;i<size;i++){
+        if(data[i]<2)
+            c++;
+        for(int e=2;e<data[i];e++){
+            if(!(data[i]%e))
+                c++;
+        }
+        if(c==0){
+            pm=data[i];
+            break;
+        }
+    }
+    for(int i=0;i<size;i++){
+        if(data[i]<2)
+            c++;
+        for(int e=2;e<data[i];e++){
+            if(!(data[i]%e))
+                c++;
+        }
+        if(c==0){
+            if(pm<data[i])
+                pm=data[i];
+        }
+        c=0;
+
+    }
+    return pm;
+}
+
+int IntegerArray::MenorPrim(){
+    int c=0;
+    int pm;
+    for(int i=0;i<size;i++){
+        if(data[i]<2)
+            c++;
+        for(int e=2;e<data[i];e++){
+            if(!(data[i]%e))
+                c++;
+        }
+        if(c==0){
+            pm=data[i];
+            break;
+        }
+    }
+    for(int i=0;i<size;i++){
+        if(data[i]<2)
+            c++;
+        for(int e=2;e<data[i];e++){
+            if(!(data[i]%e))
+                c++;
+        }
+        if(c==0){
+            if(pm>data[i])
+                pm=data[i];
+        }
+        c=0;
+
+    }
+    return pm;
+}
+
+void IntegerArray::Ordenar(){
+    for(int i=0;i<size;i++){
+        for(int j=i+1;j<size;j++){
+            if(data[i]>data[j]){
+                int aux=data[i];
+                data[i]=data[j];
+                data[j]=aux;
+            }
+        }
+    }
+}
+
+void IntegerArray::Invertir(){
+    for(int i=0;i<size/2;i++){
+        int aux=data[i];
+        data[i]=data[size-1-i];
+        data[size-1-i]=aux;
+    }
+}
+
+
+
