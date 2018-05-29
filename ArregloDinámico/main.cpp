@@ -3,12 +3,10 @@
 using namespace std;
 
 int main() {
-    IntegerArray a(2);
-    a.data[0]=1;
-    a.data[1]=2;
-    a.Insertar(3);
-    a.Insertar(4);
-    a.Eliminar(2);
-    a.Vaciar();
-    a.ImpData();
+    int b[]={1,2};
+    IntegerArray a(b,2);
+    a.Insertar(9);
+    a.Insertar(10);
+    a.Insertar(23);
+    cout<<a.MayorPrim();
 }

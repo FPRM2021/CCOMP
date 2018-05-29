@@ -1,10 +1,11 @@
 # depslib dependency file v1.0
-1526618345 source:c:\users\fabri\documents\universidad\ccomp\arreglodinámico\src\integerarray.cpp
+1527560598 source:c:\users\fabri\documents\universidad\ccomp\arreglodinámico\src\integerarray.cpp
 	"IntegerArray.h"
 
-1526618283 c:\users\fabri\documents\universidad\ccomp\arreglodinámico\include\integerarray.h
+1527560539 c:\users\fabri\documents\universidad\ccomp\arreglodinámico\include\integerarray.h
+	<iostream>
 
-1526618273 source:c:\users\fabri\documents\universidad\ccomp\arreglodinámico\main.cpp
+1527560553 source:c:\users\fabri\documents\universidad\ccomp\arreglodinámico\main.cpp
 	<iostream>
 	"IntegerArray.h"
 
