@@ -1,0 +1,53 @@
+# depslib dependency file v1.0
+1528169332 source:c:\users\fabri\documents\universidad\ccomp\repaso de practica\src\punto.cpp
+	"Punto.h"
+
+1528170730 c:\users\fabri\documents\universidad\ccomp\repaso de practica\include\punto.h
+	<iostream>
+
+1528207477 source:c:\users\fabri\documents\universidad\ccomp\repaso de practica\main.cpp
+	<iostream>
+	"Punto.h"
+	"ArrPunto.h"
+	"Autos.h"
+
+1528170730 c:\users\fabri\documents\universidad\ccomp\repaso de practica\include\arrpunto.h
+	"Punto.h"
+
+1528171247 source:c:\users\fabri\documents\universidad\ccomp\repaso de practica\src\arrpunto.cpp
+	"ArrPunto.h"
+
+1528207093 source:c:\users\fabri\documents\universidad\ccomp\repaso de practica\src\autos.cpp
+	"Autos.h"
+	<string>
+	<iostream>
+
+1528207431 c:\users\fabri\documents\universidad\ccomp\repaso de practica\include\autos.h
+	<string>
+
+1528207477 source:c:\users\fabri\documents\universidad\ccomp\trabajos de clase\repaso de practica\main.cpp
+	<iostream>
+	"Punto.h"
+	"ArrPunto.h"
+	"Autos.h"
+
+1528170730 c:\users\fabri\documents\universidad\ccomp\trabajos de clase\repaso de practica\include\punto.h
+	<iostream>
+
+1528256936 c:\users\fabri\documents\universidad\ccomp\trabajos de clase\repaso de practica\include\arrpunto.h
+	"Punto.h"
+
+1528255886 c:\users\fabri\documents\universidad\ccomp\trabajos de clase\repaso de practica\include\autos.h
+	<string>
+
+1528256936 source:c:\users\fabri\documents\universidad\ccomp\trabajos de clase\repaso de practica\src\arrpunto.cpp
+	"ArrPunto.h"
+
+1528255886 source:c:\users\fabri\documents\universidad\ccomp\trabajos de clase\repaso de practica\src\autos.cpp
+	"Autos.h"
+	<string>
+	<iostream>
+
+1528169332 source:c:\users\fabri\documents\universidad\ccomp\trabajos de clase\repaso de practica\src\punto.cpp
+	"Punto.h"
+
