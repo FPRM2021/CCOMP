@@ -38,15 +38,17 @@ public:
         this->tam=tam;
         items=new Widget[tam];
     }
+
     ArrayWidgets(const Widget wids[], const int tam){//constructor2
-        Widget *nuevo=new Widget[tam];
+        items=new Widget[tam];
         for(int i=0;i<tam;i++)
-            nuevo[i]=wids[i];
+            items[i]=wids[i];
         this->tam=tam;
+        delete []wids;
     }
     ArrayWidgets(const ArrayWidgets &arr){//constructor copia
-        items=new Widget[arr.tam];
         tam=arr.tam;
+        items=new Widget[tam];
         for(int i=0;i<tam;i++)
             items[i]=arr.items[i];
     }
@@ -62,12 +64,12 @@ public:
             nuevo[i]=items[i];
         nuevo[tam]=w;
         tam++;
-        delete[]items;
+        delete []items;
         items=nuevo;
     }
 
     void insert(const int pos, const Widget &w){
-        Widget *nuevo=new Widget[tam+1];
+        Widget *nuevo=new Widget [tam+1];
         for(int i=0;i<pos;i++)
             nuevo[i]=items[i];
         nuevo[pos]=w;
@@ -79,12 +81,11 @@ public:
     }
 
     void remove(const int pos){
-        int p=pos;
         Widget *nuevo=new Widget[tam-1];
-        for(int i=0;i<p;i++)
+        for(int i=0;i<pos;i++)
             nuevo[i]=items[i];
-        for(;p<tam;p++)
-            nuevo[p]=items[p+1];
+        for(int i=pos;i<tam-1;i++)
+            nuevo[i]=items[i+1];
         tam--;
         delete []items;
         items=nuevo;
