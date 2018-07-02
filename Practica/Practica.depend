@@ -1,11 +1,11 @@
 # depslib dependency file v1.0
-1530408424 source:c:\users\fabri\desktop\practica\src\widget.cpp
+1530486760 source:c:\users\fabri\desktop\practica\src\widget.cpp
 
-1530465671 source:c:\users\fabri\desktop\practica\main.cpp
+1530488471 source:c:\users\fabri\desktop\practica\main.cpp
 	<iostream>
 	"Widget.h"
 	<vector>
 
-1530467153 c:\users\fabri\desktop\practica\include\widget.h
+1530489835 c:\users\fabri\desktop\practica\include\widget.h
 	<iostream>
 
