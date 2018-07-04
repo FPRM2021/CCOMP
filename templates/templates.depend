@@ -1,0 +1,63 @@
+# depslib dependency file v1.0
+1528813413 source:c:\users\fabri\documents\universidad\ccomp\templates\main.cpp
+	<iostream>
+	"punto.h"
+
+1528812891 c:\users\fabri\documents\universidad\ccomp\templates\include\punto.h
+
+1528813571 source:c:\users\fabri\documents\universidad\ccomp\templates\src\punto.cpp
+	"punto.h"
+
+1528813571 source:c:\users\fabri\documents\universidad\ccomp\trabajos de clase\templates\src\punto.cpp
+	"punto.h"
+
+1528812891 c:\users\fabri\documents\universidad\ccomp\trabajos de clase\templates\include\punto.h
+
+1528865764 source:c:\users\fabri\documents\universidad\ccomp\trabajos de clase\templates\main.cpp
+	<iostream>
+	"punto.h"
+	"Container.h"
+	"ArrayContainer.h"
+
+1528864024 c:\users\fabri\documents\universidad\ccomp\trabajos de clase\templates\include\container.h
+	<cctype>
+	<iostream>
+
+1528867575 c:\users\fabri\documents\universidad\ccomp\trabajos de clase\templates\include\arraycontainer.h
+	<iostream>
+
+1528864241 source:c:\users\fabri\documents\universidad\ccomp\trabajos de clase\templates\src\container.cpp
+	"Container.h"
+
+1528856792 source:c:\users\fabri\documents\universidad\ccomp\trabajos de clase\templates\src\arraycontainer.cpp
+	"ArrayContainer.h"
+
+1530669006 source:c:\users\fabri\desktop\templates\main.cpp
+	<iostream>
+	"Point.h"
+	"Container.h"
+	"ArrayContainer.h"
+
+1530664748 c:\users\fabri\desktop\templates\include\punto.h
+
+1530668341 c:\users\fabri\desktop\templates\include\container.h
+	<cctype>
+	<iostream>
+
+1530669033 c:\users\fabri\desktop\templates\include\arraycontainer.h
+	<iostream>
+
+1530669006 source:c:\users\fabri\desktop\templates\src\container.cpp
+	"Container.h"
+
+1530664748 source:c:\users\fabri\desktop\templates\src\punto.cpp
+	"punto.h"
+
+1530664748 source:c:\users\fabri\desktop\templates\src\arraycontainer.cpp
+	"ArrayContainer.h"
+
+1530666984 c:\users\fabri\desktop\templates\include\point.h
+
+1530668341 source:c:\users\fabri\desktop\templates\src\point.cpp
+	"Point.h"
+
